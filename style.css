@@ -105,6 +105,14 @@ body {
     left: 20px;
 }
 
+  #mobile {
+    display: none;
+  }
+
+  #close{
+    display: none;
+  }
+
 #hero{
     background-image: url("../E_commerce_Website/essentials/hero4.png");
     height: 90vh;
@@ -555,4 +563,159 @@ body {
   font-weight: 500;
 }
 
+/*Starting media query*/
 
+@media (max-width: 825px ) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #E3E6F3;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+  }
+  #navbar.active {
+    right: 0px;
+  }
+  #navbar li {
+    margin-bottom: 25px;
+  }
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+  #mobile i{
+    font-size: 30px;
+    color: #222;
+    padding-left: 20px;
+  }
+  #close {  
+    display: initial;
+    position: absolute; 
+    top: 30px;
+    left: 30px;
+    font-size: 30px;
+    color: #222;
+    cursor: pointer;
+
+}
+#lg-bag{
+  display: none;
+
+}
+
+
+#hero{
+ 
+  height: 70vh; 
+  padding: 0px 80px;
+  background-position: top 30% right 30%;
+  
+}
+
+#features{
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px 60px;
+  justify-content: space-around;
+  gap: 20px;
+}
+ 
+#product-text{
+  padding: 60px;
+  
+  justify-content: space-around;
+  gap: 0.2px;
+  text-align: center;
+  border-radius: 1px;
+  flex-wrap: wrap;
+  font-size: 0.2px;
+}
+
+#featured-products{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0px 60px;
+  justify-content: space-evenly;
+  gap: 40px;
+}
+
+#sm-banner .banner-box-1 .banner-box-2{
+ 
+    min-width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 30vh;
+  
+}
+
+#sm-banner-2{
+  
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (max-width: 477px) {
+
+    #header{
+      padding: 10px 20px;
+      min-width: 40vh;
+    }
+    #hero{
+      padding: 200px 15px;
+      background-position: 80%;
+      min-width: 60vh;
+    }
+    #features{
+      
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-width: 30vh;
+    }
+
+    #product-text{
+      padding: 60px 30px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+     
+    }
+
+    #featured-products{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding:5px;
+      justify-content: center;
+      gap: 20px;
+    }
+    #banner-text{
+      padding: 40px 20px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-width: 30vh;
+    }
+
+    #sm-banner{
+    
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      
+      width: 130%;
+     
+      height: 120vh;
+      
+    }
+
+    
+  }
+}
