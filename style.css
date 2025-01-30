@@ -847,6 +847,90 @@ body {
 }
 
 
+
+            /*About page*/
+
+ #page-header.about-header{
+  background-image: url("../E_commerce_Website/essentials/about/banner.png");
+  }
+
+  #about-head{
+    display: flex;
+   
+    padding: 80px 60px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1px;
+    
+    font-size: 20px;
+    gap: 30px;
+  }
+
+  #about-app h1{
+    font-size: 50px;
+    color: #000000;
+    font-weight: 700;
+    padding: 30px 0;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  #about-app .video{
+    width: 70%;
+    height: 60%;
+    
+    border-radius: 60px;
+    margin: 10px 50px 0px auto;
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #about-app .video video{
+    width: 70%;
+    height: 60%;
+    padding: 30px 60px;
+    border-radius: 60px;
+  }
+
+  #about-app a{
+  
+    font-size: 50px;
+    color: #1e0094;
+    font-weight: 700;
+    position: relative;
+    transition: 0.3s ease;
+    
+  }
+  #about-head .about-img{
+    width: 60%;
+    margin-right: 40px;
+    height: auto;
+   
+  }
+
+  .about-text{
+    width: 40%;
+    padding: 20px;
+  }
+
+  .about-text.title{
+    font-size: 50px;
+    color: #000000;
+    font-weight: 700;
+    padding: 30px 0;
+  }
+
+  .about-text h2{
+    font-size: 50px;
+    color: #000000;
+    font-weight: 700;
+    padding: 10px 0;
+  }
+            
+
+
               /*Starting media query*/
 
 @media (max-width: 825px ) {
